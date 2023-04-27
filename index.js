@@ -1,8 +1,13 @@
 // header expander
 
 let kuenstlerExpanded = true;
+let kuenstlerClicked = false;
 
-function onKuenstler() {
+function onKuenstler(reset=false) {
+    if (!reset) {
+        kuenstlerClicked = true;
+    }
+
     let kuenstler = document.getElementById("kuenstler");
 
     if (kuenstlerExpanded) {
@@ -27,8 +32,14 @@ function onKuenstler() {
 }
 
 let kategorieExpanded = true;
+let kategorieClicked = false;
 
-function onKategorie() {
+function onKategorie(reset=false) {
+
+    if (!reset) {
+        kategorieClicked = true;
+    }
+
     let kategorie = document.getElementById("kategorie");
 
     if (kategorieExpanded) {
@@ -51,3 +62,13 @@ function onKategorie() {
 
     kategorieExpanded = true;
 }
+
+addEventListener("click", myFunction);
+
+function myFunction() {
+    if (kuenstlerClicked) kuenstlerClicked = false;
+    else if (!kuenstlerExpanded) onKuenstler(true);
+
+    if (kategorieClicked) kategorieClicked = false;
+    else if (!kategorieExpanded) onKategorie(true);
+} 
