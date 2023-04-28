@@ -17,16 +17,16 @@ body {
 }
 
 .item {
-    margin: 4%;
+    margin: 6%;
+    width: 92%;
     margin-bottom: 0;
-    width: 15%;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
 .item .img {
-    height: 70%;
+    height: 80vw;
     display: flex;
     justify-content: center;
 }
@@ -47,11 +47,31 @@ body {
     flex-direction: column;
     justify-content: center;
     margin-top: 10px;
+    font-size: 45px;
 }
 
 .description div {
+    margin: 2px;
+}
 
-    margin: 1px;
+@media screen and (orientation:landscape) { 
+    .item {
+        margin: 4%;
+        width: 15%;
+    }
+
+    .item .img {
+        height: 70%;
+    }
+
+    .description {
+        font-size: 1em;
+    }
+
+    .description div {
+
+        margin: 1px;
+    }
 }
 
 /* header */
