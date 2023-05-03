@@ -72,3 +72,26 @@ function myFunction() {
     if (kategorieClicked) kategorieClicked = false;
     else if (!kategorieExpanded) onKategorie(true);
 } 
+
+// onDirChange
+
+if (window.innerHeight > window.innerWidth) {
+    console.log("portrait")
+} else {
+    console.log("landscape")
+}
+
+window.addEventListener("resize", (event) => {
+
+    if (window.innerHeight > window.innerWidth) {
+        console.log("portrait")
+    } else {
+        console.log("landscape")
+    }
+});
+
+// burger
+
+function onBurgerChange() {
+    
+}

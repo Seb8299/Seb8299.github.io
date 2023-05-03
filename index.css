@@ -129,6 +129,10 @@ body {
     text-align: right;
 }
 
+.burger:hover {
+    cursor: pointer;
+}
+
 .expand.visible {
     /* visibility: visible; */
     top: 10px;
