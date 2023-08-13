@@ -150,7 +150,7 @@ a {
 /* footer */
 
 .footer {
-    position: fixed;
+    /* position: fixed; */
     bottom: 0;
     margin-top: 40px;
     background: black;
