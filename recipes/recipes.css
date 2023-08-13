@@ -21,7 +21,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
     font-weight: 150;
-    margin: 4%;
+    margin: 1%;
     margin-bottom: 10rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background: #0c1a29;
@@ -54,7 +54,7 @@ hr {
 
 
 .item {
-    width: 500px;
+    width: 100%;
     margin: 5px;
 }
 
@@ -69,6 +69,9 @@ img {
     .item {
         width: 500px;
         margin: 5px;
+    }
+    .flex-main {
+        margin: 4%;
     }
 }
 .material-symbols-outlined {
